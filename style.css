@@ -648,7 +648,7 @@ body{
 
 #part-two{
 	margin: 5% auto;
-	width: 100vh;
+	width: 100%;
 	display: flex;
 }
 
