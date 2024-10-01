@@ -1025,3 +1025,7 @@ body{
      	padding: 3%;
     }
 }
+
+.all-for-one{
+	overflow: hidden;
+}
