@@ -509,18 +509,12 @@ body{
 /*------------------------------Iconos Comienzo--------------------------------------*/
 
 #icon-comienzo{
-	width: 70%;
+	width: 100%;
+	height: 25vh;
 	display: flex;
 	font-size: 25px;
-	margin: 10% 30%;
+	background-color: #EEEEEE;
 }
-
-  @media (min-width: 600px) {
-        #icon-comienzo {
-        	margin: 10% auto;
-            justify-content: space-around;
-        }
-    }
 
 #icon-comienzo #map-icon{
 	background-image: url(imagenes/map-icon.png);
@@ -550,8 +544,16 @@ body{
     border-bottom: solid 3px #0E3264;
 }
 
-#content-petalos, #content-map{
-	margin: 0 5% 0 5%;
+#content-petalo{
+	margin: auto auto;
+} 
+
+#content-map{
+	margin: auto auto;
+}
+
+.null{
+	margin: auto auto;
 }
 
 /*------------------------------------Comienzo--------------------------------------*/
@@ -637,12 +639,26 @@ body{
 	.pruebaX{
 		font-size: 28px;
 	}
+
+	#part-one{
+		flex-direction: column;
+	}
+
+	#part-one-two{
+		flex-direction: column;
+	}
 }
 
 .textX{
 	font-family: "Noto Serif", serif;
 	font-size: 43px;
 	margin-top: 0;
+}
+
+.text-parrafe-two{
+	display: flex;
+	width: 100%;
+	text-align: center;
 }
 /*-----------------------------Parte Dos--------------------------------*/
 
