@@ -826,23 +826,25 @@ body{
 	font-family: "Noto Serif", serif;
 }
 
+#end{
+	margin: 5%;
+	width: 95%;
+	display: flex;
+}
+
 #div-map{
 	width: 75%;
 }
 
 @media (max-width: 1080px){
+	#end{
+		display:block;
+	}
+
 	#div-map{
 		margin-top: 2%;
 		width: 100%;
-		float: left;
-		margin-left:;
 	}
-}
-
-#end{
-	margin: 5%;
-	width: 95%;
-	display: flex
 }
 
 #formulario{
@@ -954,24 +956,23 @@ body{
 	padding-right: 10px;
 }
 
-@media(max-width: 1080px){
-	#cor{
-		margin-top: 2%;
-		position: relative;
-		display: flex;
-		float: right;
-		margin-right: 3%;
-		width: 100%;
-		justify-content: center;
-	}
-}
-
 #cor{
 	display: flex;
     width: 100%;
     justify-content: flex-end;
     margin-right: 5%;
 
+}
+
+@media(max-width: 1080px){
+	#cor{
+		margin-top: 2%;
+		position: relative;
+		display: flex;
+		margin-right: 3%;
+		width: 100%;
+		justify-content: center;
+	}
 }
 
 #whatsapp{
