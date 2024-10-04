@@ -469,22 +469,6 @@ body{
 	flex-wrap: nowrap;
 }
 
-@media (min-width: 1081px){
-	.parrafe-title{
-		top: 15%;
-	}
-}
-
-@media (max-width: 1080px){
-	#img-portada-logo{
-		display: none;
-	}
-
-	.parrafe-title{
-		top: 50%;
-	}
-}
-
 #portada .parrafe-title{
 	font-family: "Noto Serif", serif;
 	position: inherit;
@@ -493,8 +477,9 @@ body{
 	margin: 0;
 	padding: 0;
 	width: 95%;
-	font-size: 43px;
+	font-size: 48px;
 	transform: translate(-50%, -50%);
+	top: 50%;
 	z-index: 50;
 }
 
@@ -518,14 +503,14 @@ body{
 
 #icon-comienzo #map-icon{
 	background-image: url(imagenes/map-icon.png);
-	width: 70px;
-	height: 70px;
+	width: 50px;
+	height: 60px;
 	background-repeat: no-repeat;
     background-position: center;
     text-align: center;
     justify-content: center;
     margin:0 auto;
-    padding: 0 20%;
+    padding: 0 15%;
     border-bottom: solid 3px #0E3264;
 
 }
@@ -533,23 +518,25 @@ body{
 
 #petalo-icon{
 	background-image: url(imagenes/petalo.png);
-	width: 70px;
-	height: 70px;
+	width: 50px;
+	height: 60px;
 	background-repeat: no-repeat;
     background-position: center;
     text-align: center;
     justify-content: center;
     margin:0 auto;
-    padding: 0 20%;
+    padding: 0 15%;
     border-bottom: solid 3px #0E3264;
 }
 
 #content-petalo{
 	margin: auto auto;
+	font-size: 24px;
 } 
 
 #content-map{
 	margin: auto auto;
+	font-size: 24px;
 }
 
 .null{
@@ -560,7 +547,7 @@ body{
 
 
 #part-one{
-	margin: 1%;
+	margin: 5%;
 	display: flex;
 	margin-top: 3%;
 	flex-direction: row-reverse;
@@ -575,6 +562,7 @@ body{
 	object-fit: contain;
 	display: flex;
 	float: left;
+	margin: 0 0 0 0%;
 }
 
 @media (min-width: 600px){
@@ -604,6 +592,8 @@ body{
 	margin-top: 5%;
 	padding-top: 3%;
 	padding-bottom: 1.2%;
+	padding-left: 5%;
+	padding-right: 5%; 
 	background-color: #EEEEEE;
 }
 
@@ -632,7 +622,7 @@ body{
 .text-parrafe{
 	font-family: "Noto Serif", serif;
 	margin-top: 3%;
-	font-size: 21px;
+	font-size: 20px;
 }
 
 @media (max-width: 1080px){
@@ -669,7 +659,7 @@ body{
 }
 
 .pack-plan{
-	margin: 0 2%;
+	margin: 0 8%;
 	width: 45%;
 	border-radius: 25px;
 	border: 2px solid #0E3264;
@@ -745,6 +735,7 @@ body{
 
 .pack-plan .centrar-btn{
 	 width: 100%;
+	 height: 25%;
 }
 
 .pack-plan .contactenos{
@@ -809,7 +800,7 @@ body{
 
 .objetive-parrafe{
 	font-family: "Noto Serif", serif;
-	font-size: 21px;
+	font-size: 20px;
 	text-align: center;
 	margin: 3% 15%;
 }
@@ -836,14 +827,22 @@ body{
 }
 
 #div-map{
-	margin-top: 2%;
-	width: 100%;
-	float: left;
+	width: 75%;
+}
+
+@media (max-width: 1080px){
+	#div-map{
+		margin-top: 2%;
+		width: 100%;
+		float: left;
+		margin-left:;
+	}
 }
 
 #end{
 	margin: 5%;
 	width: 95%;
+	display: flex
 }
 
 #formulario{
@@ -955,14 +954,24 @@ body{
 	padding-right: 10px;
 }
 
+@media(max-width: 1080px){
+	#cor{
+		margin-top: 2%;
+		position: relative;
+		display: flex;
+		float: right;
+		margin-right: 3%;
+		width: 100%;
+		justify-content: center;
+	}
+}
+
 #cor{
-	margin-top: 2%;
-	position: relative;
 	display: flex;
-	float: right;
-	margin-right: 3%;
-	width: 100%;
-	justify-content: center;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 5%;
+
 }
 
 #whatsapp{
