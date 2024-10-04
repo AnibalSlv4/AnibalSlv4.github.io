@@ -501,6 +501,12 @@ body{
 	background-color: #EEEEEE;
 }
 
+@media (max-width: 1080px){
+	#icon-comienzo{
+	height: 12vh;
+	}
+}
+
 #icon-comienzo #map-icon{
 	background-image: url(imagenes/map-icon.png);
 	width: 50px;
@@ -671,6 +677,12 @@ body{
 	color: white;
 	-moz-animation: gradient 15s ease infinite;
 	animation: gradient 15s ease infinite;
+}
+
+@media (max-width: 1080px){
+	.pack-plan{
+		margin: 0 4.5%;
+	}
 }
 
 @-moz-keyframes gradient {
