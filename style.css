@@ -23,7 +23,6 @@ html {
 
 body {
   margin: 0;
-
 }
 
 /**
@@ -362,81 +361,69 @@ body{
 	margin: 0;
 }
 
-#navbar{
-	display: flex;
-	position: absolute;
-	background-color: #012B65;
-	justify-content: space-between;
-	height: 80px;
-	width: 100%;
-	padding:0;
-	z-index: 99999;
-	margin: auto;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0E3264;
+    padding: 10px 20px;
+}
+
+.navbar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 500px;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+.navbar img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.navbar #Title-logo-nav{
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+    display: none;
 }
 
 @media (max-width: 1080px){
-	#navbar{
-		height: 113px;
-	}
+    .navbar #Title-logo-nav{
+        display: inherit;
+    }
 }
 
-#navbar #logo{
-	display: flex;
-	padding-left: 50px;
+.navbar div{
+    display: flex;
 }
 
-#navbar #logo #Title-logo-nav{
-	margin: auto 20px;
-	font-size: 38px;
-	color: white;
-	font-family: "Noto Serif", serif;
-	opacity: 0;
-	cursor: default;
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 18px;
+    margin: 0 20px;
+    border-bottom: #85B4D2 0px solid;
+    transition: 0.3s;
 }
 
-@media (max-width: 1080px){
-	#navbar #logo #Title-logo-nav{
-		opacity: 1;
-	} 
+.navbar a:hover {
+    border-bottom: solid 2px #85B4D2;
+    transform: scale(1.2);
 }
 
-#navbar #logo img{
-	height: 95%;
-	border-radius: 100px;
-	margin: auto;
-}
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
 
-#content-nav-bar{
-	height: 100%;
-	width: 200px;
-	margin: 0;
-	padding: 0 50px 0 0;
-	display: flex;
-}
-
-#navbar .navbar-text{
-	display: inline-block;
-	font-family: "Noto Serif", serif;
-	font-size: 20px;
-	border-bottom: 2px solid transparent;
-	float: left;
-	transition: 0.3s;
-	margin:	 auto auto; /*3.5% 20px 0 20px*/
-	width:  100px;
-	text-align: center;
-	color: #fff;
-	text-decoration: none;
-}
-
-
-#navbar .navbar-text:hover{
-	cursor: pointer;
-	border-bottom: 2px solid #85B4D2;
-	transform: scale(1.1);
-}
-
-#navbar:hover{
-	border: none;
+    .navbar a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
 }
 
 #inicio{
