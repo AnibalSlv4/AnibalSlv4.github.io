@@ -381,11 +381,11 @@ body{
 
 #navbar #logo{
 	display: flex;
-	padding-left: 5%;
+	padding-left: 50px;
 }
 
 #navbar #logo #Title-logo-nav{
-	margin: 10% 20px 0 20px;
+	margin: auto 20px;
 	font-size: 38px;
 	color: white;
 	font-family: "Noto Serif", serif;
@@ -405,12 +405,15 @@ body{
 	margin: auto;
 }
 
-#navbar ul{
-	list-style: none;
-	margin: 8% 0;
+#content-nav-bar{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
 }
 
-#navbar ul .navbar-text{
+#navbar .navbar-text{
 	display: inline-block;
 	font-family: "Noto Serif", serif;
 	font-size: 20px;
@@ -421,27 +424,30 @@ body{
 	transition: 0.3s;
 }
 
-#navbar ul .navbar-text:hover{
+#navbar .navbar-text:hover{
 	cursor: pointer;
 	border-bottom: 2px solid #85B4D2;
 	transform: scale(1.1);
 }
 
-#navbar ul .navbar-text-a{
+#navbar .navbar-text-a{
 	color: #fff;
 	text-decoration: none;
 	margin: 2px 20px;
 }
 
-#navbar ul:hover{
+#navbar:hover{
 	border: none;
 }
 
-@media (max-width: 1080px){
-	#navbar ul .navbar-text{
-		margin: 10% auto 0 auto; /*3.5% 20px 0 20px*/
+	#navbar .navbar-text{
+		margin:	 auto auto; /*3.5% 20px 0 20px*/
+		width:  100px; 
 	}
-}
+
+	#navbar{
+		margin: auto;
+	}
 
 #inicio{
 	position: relative;
