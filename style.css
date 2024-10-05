@@ -11,6 +11,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+
 }
 
 /* Sections
@@ -22,6 +23,7 @@ html {
 
 body {
   margin: 0;
+
 }
 
 /**
@@ -362,10 +364,13 @@ body{
 
 #navbar{
 	display: flex;
+	position: absolute;
 	background-color: #012B65;
 	justify-content: space-between;
-	height: 75px;
-	padding: 1% 5%;
+	height: 80px;
+	width: 100%;
+	padding:0;
+	z-index: 99999;
 }
 
 @media (max-width: 1080px){
@@ -376,6 +381,7 @@ body{
 
 #navbar #logo{
 	display: flex;
+	padding-left: 5%;
 }
 
 #navbar #logo #Title-logo-nav{
@@ -406,13 +412,13 @@ body{
 
 #navbar ul .navbar-text{
 	display: inline-block;
-	margin: 2px 20px;
-	color: #fff;
 	font-family: "Noto Serif", serif;
-	transition: 0.3s;
 	font-size: 20px;
-	text-decoration: none;
 	border-bottom: 2px solid transparent;
+	float: left;
+	margin-right: 10px;
+	padding: 0 4px;
+	transition: 0.3s;
 }
 
 #navbar ul .navbar-text:hover{
@@ -421,10 +427,20 @@ body{
 	transform: scale(1.1);
 }
 
+#navbar ul .navbar-text-a{
+	color: #fff;
+	text-decoration: none;
+	margin: 2px 20px;
+}
+
+#navbar ul:hover{
+	border: none;
+}
+
 @media (max-width: 1080px){
 	#navbar ul .navbar-text{
-		margin: 3.5% 20px 0 20px;
-	} 
+		margin: 10% auto 0 auto; /*3.5% 20px 0 20px*/
+	}
 }
 
 #inicio{
@@ -432,7 +448,7 @@ body{
 }
 
 #inicio #portada{
-	height: 100vh;
+	height: 99.9vh;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -451,35 +467,20 @@ body{
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background-image:linear-gradient(45deg, rgba(57,49,102,0.3) 0%, rgba(162,217,255,0.3) 100%);
-}
-
-#logo-inicio{
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: center;
-}
-
-#portada #img-portada-logo{
-	z-index: 99;
-	width: 25%;
-	margin: 10% 0 0 0;
-	padding: 0;
-	border-radius: 500px;
-	flex-wrap: nowrap;
+	background-image:linear-gradient(45deg, rgba(57,49,102,0.4) 0%, rgba(162,217,255,0.4) 100%);
 }
 
 #portada .parrafe-title{
 	font-family: "Noto Serif", serif;
 	position: inherit;
-	color: white;
+	color: #fff;
 	left: 50%;
 	margin: 0;
 	padding: 0;
-	width: 95%;
-	font-size: 48px;
+	width: 75%;
+	font-size: 35px;
 	transform: translate(-50%, -50%);
-	top: 50%;
+	top: 55%;
 	z-index: 50;
 }
 
@@ -499,6 +500,14 @@ body{
 	display: flex;
 	font-size: 25px;
 	background-color: #EEEEEE;
+	border-top: 2px solid #003378;
+	border-bottom: 2px solid #003378;
+	background-image: linear-gradient(180deg,rgba(1,43,101,0.4) 0%, #EEEEEE 20%, #EEEEEE 80%,rgba(1,43,101,0.4) 100%)
+}
+
+#icon-comienzo::after{
+	width: 100%;
+	height: 100%;
 }
 
 @media (max-width: 1080px){
@@ -599,8 +608,11 @@ body{
 	padding-top: 3%;
 	padding-bottom: 1.2%;
 	padding-left: 5%;
-	padding-right: 5%; 
+	padding-right: 5%;
 	background-color: #EEEEEE;
+	border-top: 2px solid #003378;
+	border-bottom: 2px solid #003378;
+	background-image: linear-gradient(180deg,rgba(1,43,101,0.4) 0%, white 11%, white 91%,rgba(1,43,101,0.4) 100%)
 }
 
 #part-one-two #img-two{
@@ -662,11 +674,12 @@ body{
 	margin: 5% auto;
 	width: 100%;
 	display: flex;
+	justify-content: center;
 }
 
 .pack-plan{
 	margin: 0 8%;
-	width: 45%;
+	width: 25%;
 	border-radius: 25px;
 	border: 2px solid #0E3264;
 	animation: gradient 15s ease infinite;
@@ -753,7 +766,7 @@ body{
 .pack-plan .contactenos{
 	margin-left: 50%;
 	transform: translateX(-50%);
-	margin-top: 10%;
+	margin-top: 0;
 	margin-bottom: 10%;
 	font-size: 20px;
 	background-color: #0E3264;
@@ -788,16 +801,34 @@ body{
 /*----------------------Tercera parte-----------------------------*/
 
 #part-thre{
+	margin-top: 15%;
 	background-color: #EEEEEE;
-	padding-bottom: 2%;	
+	padding-bottom: 2%;
+	border-top: 2px solid #003378;
+	border-bottom: 2px solid #003378;
+	background-image: linear-gradient(180deg,rgba(1,43,101,0.4) 0%, #EEEEEE 20%, #EEEEEE 80%,rgba(1,43,101,0.4) 100%)
+
+}
+
+#objetive-img::after{
+	content: "";
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image:linear-gradient(0deg, transparent 20%, rgba(1,43,101,0.4) 80%);
+	z-index: -1;
 }
 
 #part-thre #objetive-img{
-	margin-top: 15%;
 	height: 250px;
+	background-image: url(imagenes/quizasPortada.png);
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
+    z-index: 1;
     -webkit-mask-image: linear-gradient(#fff 80%, transparent);
 }
 
@@ -809,6 +840,7 @@ body{
     justify-content: center;
     -webkit-msk-iamge: linear-gradient(white 80%, transparent);
 }
+
 
 .objetive-parrafe{
 	font-family: "Noto Serif", serif;
@@ -823,11 +855,15 @@ body{
 	}
 }
 
+.separar-obj{
+	margin-bottom: 5%;
+}
+
 .objetive-title{
 	font-size: 43px;
 	border-bottom:solid 3px #85B4D2; 
 	width: 45%;
-	margin: 3% auto;
+	margin: 5% auto 3% auto;
 	font-family: "Noto Serif", serif;
 }
 /*----------------end--------------------*/
@@ -860,130 +896,72 @@ body{
 }
 
 #formulario{
-	width: 50%;
+	padding: 0 5% 5% 5%;
+	width: 504px;
 }
 
-.btn {
-  /* text-align: center; */
-  cursor: pointer;
-  outline: none;
-  overflow: hidden;
-  position: relative;
-  color: #fff;
-  font-weight: 700;
-  background-color: #222;
-  margin: 0 auto;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+#formulario-dos{
+	width: 510px;
+	height: 100%;
+	padding: 0 0 0 3%;
+    margin-bottom: 3%;
+    background-position: 50%;
+    background-size: cover;
 }
 
-.btn span {
-  position: relative; 
-  z-index: 1;
+.form-struct{
+	position: relative;
+	width: 190px;
+	height: 45px;
+	padding: 0 5%; 
+	border: 2px solid #003378;
+	font-size: 18px;
+	transition: 0.3s;
+	background-color: white;
 }
 
-.btn:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 490%;
-  width: 140%;
-  background: #85B4D2;
-  opacity: 0.5;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
-  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+.form-struct:focus{
+	background-color: #CAD5E0;
+	border:2px solid #003378;
+	border-radius: 5px;
+	outline: none;
 }
 
-.btn:hover:after {
-  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
-  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+
+#form-name{
+	text-align: left;
+	margin-bottom: 2%;
 }
 
-#correo {
- 	margin: 0;
- 	float: right;
-    /* margin-right: 15px; */
-    background-color: #CDCDCD;
-    border: #85B4D2 solid 1px;
-    height: 35px;
-    width: 41%;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#lel {
-	width: 100%;
-}
-
-#mensaje {
-    background-color: #CDCDCD;
-    border: #85B4D2 solid 1px;
-    height: 150px;
-    width: 99.2%;
-}
-
-.text6 {
-    font-size: 17px;
-    color: black;
-}
-
-#correo:focus, #nombre:focus, #mensaje:focus {
-    background-color: #F2F2F2;
-    outline: none;
-}
-
-#boton6{
-	display: flex;
-	justify-content: center;
-    width: 150px;
-    height: 30px;
-    background-color: #CDCDCD;
-    border: #85B4D2 solid 1px;
-    color: #5C5C5C;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-#boton6:hover {
-    transform: scale(1.2)
-    transition: 1s;
-    color: #232323;
-}
-
-#datos {
-    height: 44;
-    width:  66;
+#form-correo{
     float: right;
+    margin-bottom: 2%;
 }
 
-#nombre {
-	float: left;
-	background-color: #CDCDCD;
-	border: #85B4D2 solid 1px;
-	height: 35px;
-	width: 41%;
-	padding-left: 10px;
-	padding-right: 10px;
+#form-mess{
+	padding-top: 2%;
+	width: 457px;
+	height: 234px;
 }
 
-#cor{
-	display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    margin-right: 5%;
+#form-btn{
+	float: right;
+}
 
+#form-btn:hover{
+	background-color: #EEEEEE;
+	border:2px solid #003378;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 @media(max-width: 1080px){
-	#cor{
-		margin-top: 2%;
-		position: relative;
-		display: flex;
-		margin-right: 3%;
-		width: 100%;
-		justify-content: center;
+	#formulario{
+		margin: 0 auto;
+	}
+
+	#form-btn{
+		right: 30%;
 	}
 }
 
@@ -1053,7 +1031,10 @@ body{
 	color: white;
     padding: 20px 0;
     text-align: center;
-        }
+    border-top: 2px solid #001B40;
+	border-bottom: 2px solid #001B40;
+	background-image: linear-gradient(180deg,rgba(0,27,64,0.4) 0%,  #0E3264 20%,  #0E3264 80%, rgba(0,27,64,0.4) 100%)
+    }
 
 .footer .container {
 	display: flex;
