@@ -564,7 +564,6 @@ body{
 #part-one{
 	margin: 5%;
 	display: flex;
-	margin-top: 3%;
 	flex-direction: row-reverse;
 }
 
@@ -580,10 +579,11 @@ body{
 	margin: 0 0 0 0%;
 }
 
-@media (min-width: 600px){
+@media (max-width: 1080px){
 	#part-one #img-one{
 		height: 100%;
 		margin: auto;
+		margin-bottom: 5%;
 	}
 }
 
@@ -618,7 +618,7 @@ body{
 #part-one-two #img-two{
 	height: auto;
 	border-radius: 90px;
-	height: auto;
+	margin: auto;
 	height: calc(100% - 60px);
   	object-fit: contain;  
 }
@@ -630,10 +630,10 @@ body{
 	object-fit: cover;
 }
 
-@media(min-width: 600px){
-	#img-two{
+@media(max-width: 1080px){
+	#part-one-two #img-two{
 		height: 100%;
-		margin: auto;
+		margin-bottom: 5%;
 	}
 }
 
@@ -675,6 +675,16 @@ body{
 	width: 100%;
 	display: flex;
 	justify-content: center;
+}
+
+#planes-title-p{
+	font-size: 43px;
+	text-align: center;
+	font-family: "Noto Serif", serif;
+	border-bottom:solid 3px #0E3264; 
+	width: 15%;
+	margin: 0 auto;
+	padding: 0 50px;
 }
 
 .pack-plan{
@@ -719,7 +729,7 @@ body{
 	font-family: "Bona Nova SC", serif;
 	font-style: italic;
 	background-color: #0E3264;
-	font-size: 33px;
+	font-size: 25px;
 	margin: 0;
 	padding: 3% 0;
 	border-top-right-radius: 22px;
@@ -731,7 +741,7 @@ body{
 .pack-plan .precio{
 	font-family: "Bona Nova SC", serif;
 	font-style: italic;
-	font-size: 40px;
+	font-size: 35px;
 	text-align: center;
 	border-bottom: solid 2px #0E3264;
 	width: 75%;
@@ -744,7 +754,7 @@ body{
 
 .precio-mes{
 	font-family: "Bona Nova", serif;
-	font-size: 25px
+	font-size: 15px
 }
 
 .pack-plan ul{
@@ -754,8 +764,8 @@ body{
 
 .pack-plan .beneficios{
 	font-family: "Noto Serif", serif;
-	margin: 10% 10%;
-	font-size: 22px;
+	margin: 8% 10%;
+	font-size: 18px;
 }
 
 .pack-plan .centrar-btn{
@@ -849,11 +859,6 @@ body{
 	margin: 3% 15%;
 }
 
-@media(max-width: 1080px){
-	.objetive-parrafe{
-		font-size: 28px;
-	}
-}
 
 .separar-obj{
 	margin-bottom: 5%;
@@ -861,11 +866,22 @@ body{
 
 .objetive-title{
 	font-size: 43px;
-	border-bottom:solid 3px #85B4D2; 
+	border-bottom:solid 3px #0E3264; 
 	width: 45%;
 	margin: 5% auto 3% auto;
 	font-family: "Noto Serif", serif;
 }
+
+@media(max-width: 1080px){
+	.objetive-parrafe{
+		font-size: 28px;
+	}
+
+	.separar-obj{
+		margin-bottom: 8%;
+	}
+}
+
 /*----------------end--------------------*/
 
 #contactenos-title{
@@ -903,7 +919,7 @@ body{
 #formulario-dos{
 	width: 510px;
 	height: 100%;
-	padding: 0 0 0 3%;
+	padding: 0;
     margin-bottom: 3%;
     background-position: 50%;
     background-size: cover;
