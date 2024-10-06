@@ -394,11 +394,12 @@ body{
 
 @media (max-width: 1080px){
     .navbar #Title-logo-nav{
-        display: inherit;
+        display: flex;
+        align-items: center;
     }
     
     .navbar img {
-        height: 103px;
+        height: 100%;
     }
 }
 
