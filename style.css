@@ -371,10 +371,13 @@ body{
 
 .navbar img {
     width: 60px;
-    height: 60px;
     border-radius: 500px;
     margin-left: 25px;
     transition: 0.3s;
+    height: 65px;
+    width: 65px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navbar img:hover{
@@ -393,13 +396,17 @@ body{
     .navbar #Title-logo-nav{
         display: inherit;
     }
+    
+    .navbar img {
+        height: 103px;
+    }
 }
 
 .navbar div{
     display: flex;
 }
 
-.navbar a{
+.navbar .text-nav-bar{
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -409,7 +416,7 @@ body{
     transition: 0.3s;
 }
 
-.navbar a:hover {
+.navbar .text-nav-bar:hover {
     border-bottom: solid 2px #85B4D2;
     transform: scale(1.2);
 }
@@ -419,7 +426,7 @@ body{
         flex-direction: column;
     }
 
-    .navbar a {
+    .navbar .text-nav-bar {
         padding: 10px;
         text-align: center;
         width: 100%;
